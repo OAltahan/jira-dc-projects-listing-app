@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Atlassian-Build-Date: 2022-06-08T23:55:43+0300
+Atlassian-Plugin-Key: com.atlassian.plugins.omar.ProjectListingAPP
+Bnd-LastModified: 1654721744949
+Build-Jdk: 1.8.0_282
+Built-By: Muhammet Ayal
+Bundle-Description: This plugin lists a table of Jira Projects
+Bundle-DocURL: http://www.example.com/
+Bundle-ManifestVersion: 2
+Bundle-Name: ProjectListingAPP
+Bundle-SymbolicName: com.atlassian.plugins.omar.ProjectListingAPP
+Bundle-Vendor: Example Company
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.atlassian.plugins.tutorial.api;version="1.0.0"
+Import-Package: org.springframework.osgi.context;resolution:=optional,or
+ g.springframework.osgi.service.exporter.support;resolution:=optional,or
+ g.springframework.osgi.service.importer.support;resolution:=optional,or
+ g.eclipse.gemini.blueprint.context;resolution:=optional,org.eclipse.gem
+ ini.blueprint.service.exporter;resolution:=optional,org.eclipse.gemini.
+ blueprint.service.exporter.support;resolution:=optional,org.eclipse.gem
+ ini.blueprint.service.importer.support;resolution:=optional,com.atlassi
+ an.jira.component,com.atlassian.jira.project,com.atlassian.plugin.osgi.
+ factory,com.atlassian.sal.api.auth,com.atlassian.sal.api.user,com.atlas
+ sian.templaterenderer,com.google.common.base,com.google.common.collect,
+ javax.annotation,javax.inject,javax.servlet,javax.servlet.http,javax.ws
+ .rs,org.apache.commons.lang,org.apache.commons.logging,org.osgi.framewo
+ rk,org.springframework.aop.support,org.springframework.beans,org.spring
+ framework.beans.factory,org.springframework.beans.factory.annotation,or
+ g.springframework.beans.factory.config,org.springframework.beans.factor
+ y.parsing,org.springframework.beans.factory.support,org.springframework
+ .beans.factory.xml,org.springframework.context.annotation,org.springfra
+ mework.core.io,org.springframework.stereotype,org.springframework.util,
+ org.w3c.dom
+Originally-Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Spring-Context: *
+Tool: Bnd-2.4.1.201501161923

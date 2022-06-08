@@ -1,0 +1,3 @@
+com.atlassian.sal.api.auth.LoginUriProvider
+com.atlassian.sal.api.user.UserManager
+com.atlassian.templaterenderer.TemplateRenderer
