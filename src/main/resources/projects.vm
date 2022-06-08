@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <title>Projects List</title>
+    <meta name="decorator" content="atl.admin"/>
+    $webResourceManager.requireResource(
+        "com.atlassian.plugins.tutorial.xproduct-admin-ui-plugin:xproduct-admin-ui-plugin-resources")
+
+    <script>
+        let path = 'http://localhost:8080'
+        $(document).ready(function () {
+            let table = $('#myTable').DataTable({
+                ajax: {
+                    url: path + "/rest/listerapp/1.0/main/projects",
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<table id="myTable" class="display">
+    <thead>
+    <tr>
+        <th>Project ID</th>
+        <th>Project Name</th>
+        <th>Project Category</th>
+    </tr>
+    </thead>
+</table>
+
+</body>
+</html>
